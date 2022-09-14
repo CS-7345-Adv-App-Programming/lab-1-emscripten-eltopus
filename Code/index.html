@@ -9,23 +9,16 @@
   <body>
     <div class="container">
       <h1>Matrix Multiplication Completion Time</h1>
-      <form onsubmit="return calMatrix()">
+      <form onsubmit="runTests();return false">
         <div class="form-group">
           <label for="firstName">Matrix Size</label>
           <input type="text" class="form-control" id="size" placeholder="Enter matrix size" name="matrix_size">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+      <p id="tk"> <font size="5"> WASM code took 0.0 miliseconds</font></p>
   </body>
   <script  type="text/javascript" src="./output.js"> </script>
-  <script>
-    function calMatrix() {
-      const n = document.getElementById("size").value;
-      var matrix = new Module.Matrix();
-      const time_taken = matrix.multMatrix(n);
-      console.log("Time taken is: " + time_taken + " sec");
-      alert("Time taken is: " + time_taken.toFixed(4) + " secs");
-    }
-  
-</script>
+  <script  type="text/javascript" src="./matrix_mini.js"> </script>
+  <script  type="text/javascript" src="./run.js"> </script>
 </html>

@@ -15,19 +15,21 @@ double Matrix::multMatrix(int n) {
     
     // Initialize Matrices
     
-    for(int i = 0; i < n; ++i)
-        for(int j = 0; j < n; ++j)
-        {
+    for(int i = 0; i < n; ++i) {
+        for(int j = 0; j < n; ++j){
             A[i][j] = (double)rand()/ (double)RAND_MAX;
-	    B[i][j] = (double)rand()/ (double)RAND_MAX;
-	    C[i][j] = 0;
+            B[i][j] = (double)rand()/ (double)RAND_MAX;
+            C[i][j] = 0;
         }
+
+    }
 
     // Matrix multiplication
 
     int i,j,k;
 
-    struct timeval start, end; 
+    struct timeval start, end;
+    long seconds, useconds; 
   
     // start timer. 
     gettimeofday(&start, NULL); 
@@ -39,18 +41,24 @@ double Matrix::multMatrix(int n) {
     for(i = 0; i < n; ++i) {
         for(int k = 0; k < n; ++k) { 
             for(j = 0; j < n; ++j) {
-                        C[i][j] += A[i][k] * B[k][j];
+                C[i][j] += A[i][k] * B[k][j];
                 }
 	    }
     }
 
     gettimeofday(&end, NULL); 
-    
+
     double time_taken;
 
+    // seconds = end.tv_sec - start.tv_sec; //seconds
+    // useconds = end.tv_usec - start.tv_usec; //milliseconds
+    // time_taken = ((seconds) * 1000 + useconds / 1000.0);
+
+    // time_taken = (double)(end.tv_usec - start.tv_usec) / 1000000 + (double)(end.tv_sec - start.tv_sec);
+        
+
     time_taken = (end.tv_sec - start.tv_sec) * 1e6; 
-    time_taken = (time_taken + (end.tv_usec -  
-                              start.tv_usec)) * 1e-6; 
+    time_taken = (time_taken + (end.tv_usec -  start.tv_usec)) * 1e-6; 
   
     return time_taken;
 }

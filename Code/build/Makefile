@@ -28,7 +28,7 @@ glue:
 	python3 $(EMSDK_ROOT_FOLDER)/tools/webidl_binder.py $(REPO_CODE_DIR)/matrix_classes.idl $(REPO_CODE_DIR)/glue
 
 build:
-	emcc $(MATRIX_CPP) $(MATRIX_GLUE_WRAPPER) --post-js $(GLUE_JS) -o $(OUTPUT_JS) -s EXPORTED_RUNTIME_METHODS=["ccall, cwrap"]
+	emcc $(MATRIX_CPP) $(MATRIX_GLUE_WRAPPER) --post-js $(GLUE_JS) -O2 -o $(OUTPUT_JS) -s EXPORTED_RUNTIME_METHODS=["ccall, cwrap"]
 
 node:
 	node $(NODE)

@@ -1,5 +1,6 @@
 const express = require('express'); //Import the express dependency
 const cors = require('cors');
+const path = require('path');
 const bodyParser = require('body-parser')
 
 const app = express();              //Instantiate an express app, the main work horse of this server
@@ -11,14 +12,14 @@ app.use(cors());
 app.use('/', express.static('.'))
 
 app.get('/', (req, res) => {        //get requests to the root ("/") will route here
-    res.sendFile('index.html', {root: __dirname});      //server responds by sending the index.html file to the client's browser
-                                                        //the .sendFile method needs the absolute path to the file, see: https://expressjs.com/en/4x/api.html#res.sendFile 
+    res.sendFile(path.join(__dirname, '/index.html'));    //server responds by sending the index.html file to the client's browser
+                                                
 });
 
-app.post('/', urlencodedParser, (req, res) => {
-    console.log('Got body:', req.body);
-    res.sendStatus(200);
-});
+// app.post('/', urlencodedParser, (req, res) => {
+//     console.log('Got body:', req.body);
+//     res.sendStatus(200);
+// });
 
 app.listen(port, () => {            //server starts listening for any attempts from a client to connect at port: {port}
     console.log(`Now listening on port ${port}`); 
