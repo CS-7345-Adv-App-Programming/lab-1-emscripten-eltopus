@@ -1,0 +1,65 @@
+Running C++ Native Code
+Time taken for run #: 0: 0.177319 sec
+Time taken for run #: 1: 0.118716 sec
+Time taken for run #: 2: 0.094826 sec
+Time taken for run #: 3: 0.140683 sec
+Time taken for run #: 4: 0.106639 sec
+Time taken for run #: 5: 0.141147 sec
+Time taken for run #: 6: 0.138094 sec
+Time taken for run #: 7: 0.095357 sec
+Time taken for run #: 8: 0.179817 sec
+Time taken for run #: 9: 0.114421 sec
+Time taken for run #: 10: 0.137512 sec
+Time taken for run #: 11: 0.120689 sec
+Time taken for run #: 12: 0.122664 sec
+Time taken for run #: 13: 0.100708 sec
+Time taken for run #: 14: 0.146688 sec
+Time taken for run #: 15: 0.135986 sec
+Time taken for run #: 16: 0.148544 sec
+Time taken for run #: 17: 0.094389 sec
+Time taken for run #: 18: 0.115273 sec
+Time taken for run #: 19: 0.206761 sec
+Time taken for run #: 20: 0.186709 sec
+Time taken for run #: 21: 0.143626 sec
+Time taken for run #: 22: 0.130612 sec
+Time taken for run #: 23: 0.124849 sec
+Time taken for run #: 24: 0.111902 sec
+Time taken for run #: 25: 0.117587 sec
+Time taken for run #: 26: 0.103258 sec
+Time taken for run #: 27: 0.118919 sec
+Time taken for run #: 28: 0.126468 sec
+Time taken for run #: 29: 0.10795 sec
+Average Time taken for 30 runs is: 0.13027 sec
+-----------------------------------------------------------
+Running Javascript Code
+Time taken for run #: 0: 0.4130 sec
+Time taken for run #: 1: 0.0940 sec
+Time taken for run #: 2: 0.1370 sec
+Time taken for run #: 3: 0.1870 sec
+Time taken for run #: 4: 0.0960 sec
+Time taken for run #: 5: 0.1390 sec
+Time taken for run #: 6: 0.1160 sec
+Time taken for run #: 7: 0.1230 sec
+Time taken for run #: 8: 0.1090 sec
+Time taken for run #: 9: 0.1500 sec
+Time taken for run #: 10: 0.1070 sec
+Time taken for run #: 11: 0.1320 sec
+Time taken for run #: 12: 0.1370 sec
+Time taken for run #: 13: 0.1110 sec
+Time taken for run #: 14: 0.1260 sec
+Time taken for run #: 15: 0.0940 sec
+Time taken for run #: 16: 0.1130 sec
+Time taken for run #: 17: 0.0950 sec
+Time taken for run #: 18: 0.1060 sec
+Time taken for run #: 19: 0.1140 sec
+Time taken for run #: 20: 0.1180 sec
+Time taken for run #: 21: 0.1200 sec
+Time taken for run #: 22: 0.1010 sec
+Time taken for run #: 23: 0.1090 sec
+Time taken for run #: 24: 0.0890 sec
+Time taken for run #: 25: 0.1220 sec
+Time taken for run #: 26: 0.0900 sec
+Time taken for run #: 27: 0.0970 sec
+Time taken for run #: 28: 0.1230 sec
+Time taken for run #: 29: 0.1430 sec
+Average Time taken for 30 runs is: 0.1270 sec
