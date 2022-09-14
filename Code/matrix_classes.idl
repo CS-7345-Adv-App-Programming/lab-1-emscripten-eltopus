@@ -1,0 +1,4 @@
+interface Matrix {
+    void Matrix();
+    double multMatrix(long n);
+};

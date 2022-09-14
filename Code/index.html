@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Advanced Application Programming Lab 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Matrix Multiplication Completion Time</h1>
+      <form onsubmit="return calMatrix()">
+        <div class="form-group">
+          <label for="firstName">Matrix Size</label>
+          <input type="text" class="form-control" id="size" placeholder="Enter matrix size" name="matrix_size">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </body>
+  <script  type="text/javascript" src="./output.js"> </script>
+  <script>
+    function calMatrix() {
+      const n = document.getElementById("size").value;
+      var matrix = new Module.Matrix();
+      const time_taken = matrix.multMatrix(n);
+      console.log("Time taken is: " + time_taken + " sec");
+      alert("Time taken is: " + time_taken.toFixed(4) + " secs");
+    }
+  
+</script>
+</html>
